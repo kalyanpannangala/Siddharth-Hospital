@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #fff;
+      color: #6e8efb;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #dfe9ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Book Your Appointment</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="message">Additional Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Anything specific you'd like to mention..."></textarea>
+
+      <button type="submit">Submit Appointment</button>
+    </form>
+  </div>
+</body>
+</html>
